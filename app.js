@@ -7,7 +7,7 @@ let taskdesc = ""
 
 // bir elementin bütün child elementlerini döndüren recursive mantıkla çalışan bir fonksiyon yazdım.
 // anlaması şimdilik zor gelebilir. O yüzden açıklamadım, bu konuya çalışırken geri dönüp pratik için bakılabilir.
-const getAllChildren = (htmlElement, childElements = []) => {
+const getAllChildren = (htmlElement) => {
 
     if (htmlElement.children.length === 0) return [htmlElement];
 
@@ -15,7 +15,7 @@ const getAllChildren = (htmlElement, childElements = []) => {
 
     for (let i = 0; i <htmlElement.children.length; i++)
     {
-        let children = getAllChildren(htmlElement.children[i], childElements);
+        let children = getAllChildren(htmlElement.children[i]);
         if (children) allChildElements = [htmlElement, ...children];
     }
     
