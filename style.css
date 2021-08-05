@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    background-color: #333333;
+    flex-grow: 1;
+    min-width: 40vh;
+    max-width: 40vh;
+    height: 100vh;
+    padding-left: 4.5rem;
+    padding-right: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.gap {
+    margin-top: 2rem;
+}
+.menu>.gap>p {
+    color: white;
+    font-size: 2.5rem;
+    user-select: none;
+}
+
+.pages {
+    height: 75vh;
+    padding-top: 2rem;
+}
+
+
+.pages>ul {
+    list-style-type: none;
+    display: inline-block;
+    padding:0;
+}
+
+.pages>ul>li {
+    margin: 0 0 1.5rem 0;
+}
+
+.pages>ul>li>a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.pages>ul>li>a:hover {
+    color: rgb(155, 155, 155);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/*TODOS*/
+
+.todos {
+    flex-grow: 2;
+    width: 100%;
+    padding: 2.3rem 50px 50px 50px;
+}
+
+.todos>.baking {
+    color: #333333;
+    font-size: 2rem;
+}
+/* TODO ITEM */
+
+.box {
+    margin-top: 35px;
+    width: 810px; 
+    height: 150px; 
+    border-left: 5px solid rgb(255, 0, 247);
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+.card-items {
+    padding: 1rem;
+    
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+hr {
+    width: 10rem;
+}
+
+.card-desc {
+    margin-top: 0.7rem;
+}
+
+/*BUTTON*/
+
+.button {
+    background-color: white;
+    box-shadow: 0 2px 7px rgb(0, 0, 0, 0.4);
+    border-radius: 50%;
+    position: fixed;
+    width: 5em;
+    height: 5rem;
+    bottom: 3rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #e73c7e, );
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+    margin: 25px 20px 20px 25px;
+}
+
+.icon>svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #333333;
+    transition: fill 0.5s ease-out;
+}
+
+.icon>svg:hover {
+    fill: rgb(255, 0, 247);
+}
+/* MODAL */
+.modal {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 35%;
+}
+
+.modal-content {
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35rem;
+    height: 15rem;
+    padding: 2rem;
+}
+
+.modal-content>h2 {
+    color: white;
+    font-size: 2.5rem;
+}
